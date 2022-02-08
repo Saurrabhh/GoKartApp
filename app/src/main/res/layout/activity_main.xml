@@ -34,7 +34,7 @@
 <!--       app:sv_speedTextPosition="BOTTOM_CENTER"-->
 <!--       />-->
 
-    <com.github.anastr.speedviewlib.ImageSpeedometer
+    <com.github.anastr.speedviewlib.TubeSpeedometer
         android:id="@+id/speedo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,7 +46,6 @@
         app:sv_startDegree="150"
 
         app:sv_cutPadding="20dp"
-        app:sv_image="@drawable/sdgh1"
 
         app:sv_backgroundCircleColor="@android:color/transparent"/>
 
