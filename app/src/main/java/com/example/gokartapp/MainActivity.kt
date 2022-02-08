@@ -11,6 +11,7 @@ import kotlin.concurrent.timerTask
 
 class MainActivity : AppCompatActivity() {
 
+
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        val speedo = binding.speedo
+        val speedo = binding.speedo1
 
         binding.btn.setOnClickListener{
             val t = binding.speed.text.toString()

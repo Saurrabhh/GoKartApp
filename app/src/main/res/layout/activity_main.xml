@@ -1,36 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
 
-   <com.github.anastr.speedviewlib.AwesomeSpeedometer
-       android:id="@+id/speedo"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_centerVertical="true"
-       android:layout_centerHorizontal="true"
-       app:sv_endDegree="410"
-       app:sv_tickNumber="11"
-       app:sv_withTremble="false"
-       app:sv_withIndicatorLight="true"
-       app:sv_indicatorLightColor="@color/teal_700"
-       app:sv_indicator="KiteIndicator"
-       app:sv_indicatorColor="@color/teal_200"
-       app:sv_textColor="@color/white"
-       app:sv_trianglesColor="@color/teal_700"
-       app:sv_unitUnderSpeedText="false"
-       app:sv_speedTextPosition="BOTTOM_CENTER"
-       />
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+<!--   <com.github.anastr.speedviewlib.AwesomeSpeedometer-->
+<!--       android:id="@+id/speedo"-->
+<!--       android:layout_width="wrap_content"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:layout_centerVertical="true"-->
+<!--       android:layout_centerHorizontal="true"-->
+<!--       app:sv_endDegree="410"-->
+<!--       app:sv_tickNumber="11"-->
+<!--       app:sv_withTremble="false"-->
+<!--       app:sv_withIndicatorLight="true"-->
+<!--       app:sv_indicatorLightColor="@color/teal_700"-->
+<!--       app:sv_indicator="KiteIndicator"-->
+<!--       app:sv_indicatorColor="@color/teal_200"-->
+<!--       app:sv_textColor="@color/white"-->
+<!--       app:sv_trianglesColor="@color/teal_700"-->
+<!--       app:sv_unitUnderSpeedText="false"-->
+<!--       app:sv_speedTextPosition="BOTTOM_CENTER"-->
+<!--       />-->
+
+    <com.github.anastr.speedviewlib.ImageSpeedometer
+        android:id="@+id/speedo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        app:sv_indicator="NormalSmallIndicator"
+        app:sv_withTremble="false"
+        app:sv_tickNumber="11"
+        app:sv_startDegree="150"
+
+        app:sv_cutPadding="20dp"
+        app:sv_image="@drawable/sdgh1"
+
+        app:sv_backgroundCircleColor="@android:color/transparent"/>
+
 
     <EditText
         android:id="@+id/speed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/speedo"
+        android:layout_below="@+id/speedo1"
         android:textColor="@color/black"
         android:background="@color/white"
         android:layout_centerHorizontal="true"
@@ -64,6 +89,6 @@
         android:layout_below="@+id/btn"
         android:layout_centerHorizontal="true"/>
 
+    </RelativeLayout>
 
-
-</RelativeLayout>
+</ScrollView>
