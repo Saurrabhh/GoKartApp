@@ -4,102 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img"
+    android:background="@drawable/bcimg"
     tools:context=".MainActivity"
-
     >
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-
-
-<!--   <com.github.anastr.speedviewlib.AwesomeSpeedometer-->
-<!--       android:id="@+id/speedo"-->
-<!--       android:layout_width="wrap_content"-->
-<!--       android:layout_height="wrap_content"-->
-<!--       android:layout_centerVertical="true"-->
-<!--       android:layout_centerHorizontal="true"-->
-<!--       app:sv_endDegree="410"-->
-<!--       app:sv_tickNumber="11"-->
-<!--       app:sv_withTremble="false"-->
-<!--       app:sv_withIndicatorLight="true"-->
-<!--       app:sv_indicatorLightColor="@color/teal_700"-->
-<!--       app:sv_indicator="KiteIndicator"-->
-<!--       app:sv_indicatorColor="@color/teal_200"-->
-<!--       app:sv_textColor="@color/white"-->
-<!--       app:sv_trianglesColor="@color/teal_700"-->
-<!--       app:sv_unitUnderSpeedText="false"-->
-<!--       app:sv_speedTextPosition="BOTTOM_CENTER"-->
-<!--       />-->
 
         <com.github.anastr.speedviewlib.ImageSpeedometer
             android:id="@+id/speedo1"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="500dp"
+            android:layout_height="200dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="150dp"
-            android:rotation="80"
-            app:sv_backgroundCircleColor="@android:color/transparent"
-            app:sv_cutPadding="20dp"
-            app:sv_indicator="NormalSmallIndicator"
-            app:sv_startDegree="150"
-            app:sv_withTremble="false" />
+            android:layout_marginTop="135dp"
+            app:sv_indicator="KiteIndicator"
+            app:sv_image="@drawable/ggauge"
+            app:sv_withIndicatorLight="true"
+            app:sv_indicatorColor="@color/teal_700"
+            app:sv_indicatorLightColor="@color/teal_700"
+            app:sv_maxSpeed="200"
+            app:sv_indicatorWidth="5dp"
+            app:sv_startDegree="256"
+            app:sv_endDegree="470"
+            />
 
         <com.github.anastr.speedviewlib.ImageSpeedometer
             android:id="@+id/speedo2"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="500dp"
+            android:layout_height="200dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="410dp"
-            android:rotation="80"
-            app:sv_backgroundCircleColor="@android:color/transparent"
-            app:sv_cutPadding="20dp"
-            app:sv_indicator="NormalSmallIndicator"
-            app:sv_startDegree="150"
-            app:sv_withTremble="false" />
+            android:layout_marginTop="400dp"
+            app:sv_indicatorWidth="5dp"
+            app:sv_image="@drawable/ggauge"
+            app:sv_indicator="KiteIndicator"
+            app:sv_indicatorLightColor="@color/teal_200"
+            app:sv_indicatorColor="@color/teal_700"
+            app:sv_withIndicatorLight="true"
+            app:sv_startDegree="256"
+            app:sv_endDegree="470"
+            />
 
 
-    <EditText
-        android:id="@+id/speed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/speedo2"
-        android:textColor="@color/black"
-        android:background="@color/white"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:paddingStart="15dp"
-        android:paddingEnd="15dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:hint="Enter speed"
-        android:alpha="0"/>
-    <Button
-        android:id="@+id/btn"
-        android:background="@color/teal_200"
-        android:layout_below="@+id/speed"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/white"
-        android:text="GO"
-        android:textSize="20sp"
-        android:alpha="0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/rdmbtn"
-        android:background="@color/teal_200"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Full Cycle"
-        android:textColor="@color/white"
-        android:layout_marginTop="5dp"
-        android:layout_below="@+id/btn"
-        android:alpha="0"
-        android:layout_centerHorizontal="true"/>
 
     </RelativeLayout>
 
