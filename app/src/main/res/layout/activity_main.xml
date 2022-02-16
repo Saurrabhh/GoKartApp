@@ -25,9 +25,15 @@
             app:sv_indicatorColor="@color/teal_700"
             app:sv_indicatorLightColor="@color/teal_700"
             app:sv_maxSpeed="200"
+            android:rotation="90"
+            app:sv_speedTextPosition="BOTTOM_CENTER"
+            app:sv_speedTextColor="@color/teal_700"
+            app:sv_trembleDegree="70"
             app:sv_indicatorWidth="5dp"
-            app:sv_startDegree="256"
-            app:sv_endDegree="470"
+            app:sv_unitUnderSpeedText="true"
+            app:sv_unitTextColor="@color/teal_700"
+            app:sv_startDegree="165"
+            app:sv_endDegree="370"
             />
 
         <com.github.anastr.speedviewlib.ImageSpeedometer
@@ -37,13 +43,19 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="400dp"
             app:sv_indicatorWidth="5dp"
+            android:rotation="90"
+            app:sv_speedTextPosition="BOTTOM_CENTER"
+            app:sv_speedTextColor="@color/teal_700"
+            app:sv_unitUnderSpeedText="true"
             app:sv_image="@drawable/ggauge"
             app:sv_indicator="KiteIndicator"
             app:sv_indicatorLightColor="@color/teal_200"
             app:sv_indicatorColor="@color/teal_700"
             app:sv_withIndicatorLight="true"
-            app:sv_startDegree="256"
-            app:sv_endDegree="470"
+            app:sv_startDegree="165"
+            app:sv_unitTextColor="@color/teal_700"
+            app:sv_trembleDegree="70"
+            app:sv_endDegree="370"
             />
 
 
