@@ -22,7 +22,7 @@
             app:sv_indicator="KiteIndicator"
             app:sv_image="@drawable/ggauge"
             app:sv_indicatorColor="@color/teal_700"
-            app:sv_maxSpeed="100"
+            app:sv_maxSpeed="200"
             android:rotation="90"
             app:sv_speedTextPosition="BOTTOM_CENTER"
             app:sv_speedTextColor="@color/white"
@@ -42,7 +42,6 @@
             android:layout_marginTop="400dp"
             app:sv_indicatorWidth="5dp"
             android:rotation="90"
-            app:sv_maxSpeed="100"
             app:sv_speedTextPosition="BOTTOM_CENTER"
             app:sv_speedTextColor="@color/white"
             app:sv_unitUnderSpeedText="true"
@@ -55,8 +54,15 @@
             app:sv_endDegree="370"
             />
 
-
-
+        <TextClock
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="264dp"
+            android:layout_marginTop="427sp"
+            android:rotation="90"
+            android:textColor="@color/white"
+            android:textSize="10.7sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
