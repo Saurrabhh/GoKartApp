@@ -38,18 +38,7 @@ class MainActivity : AppCompatActivity() {
         }
         speedo1.speedTo(50F, 1000)
         speedo2.speedTo(100F, 1000)
-//        speedo1.onSpeedChangeListener = { gauge: Gauge, isSpeedUp: Boolean, isByTremble: Boolean ->
-//
-//            Handler().postDelayed({
-//                val speed = (0..200).random().toFloat()
-//                Toast.makeText(this, speed.toString(), Toast.LENGTH_SHORT).show()
-//                speedo1.speedTo( speed, 500)
-//
-//            }, 5000)
-//
-//
-//
-//        }
+
     }
 }
 
