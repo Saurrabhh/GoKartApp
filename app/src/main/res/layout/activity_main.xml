@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bcimg"
+    android:background="@drawable/bcimg1"
     tools:context=".MainActivity"
     >
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
 
         <com.github.anastr.speedviewlib.ImageSpeedometer
@@ -18,7 +18,7 @@
             android:layout_width="500dp"
             android:layout_height="200dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="135dp"
+            android:layout_marginTop="115dp"
             app:sv_indicator="KiteIndicator"
             app:sv_image="@drawable/ggauge"
             app:sv_indicatorColor="@color/teal_700"
@@ -39,7 +39,7 @@
             android:layout_width="500dp"
             android:layout_height="200dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="400dp"
+            android:layout_marginTop="385dp"
             app:sv_indicatorWidth="5dp"
             android:rotation="90"
             app:sv_speedTextPosition="BOTTOM_CENTER"
@@ -54,11 +54,52 @@
             app:sv_endDegree="370"
             />
 
+        <TextView
+            android:id="@+id/rad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="251dp"
+            android:rotation="90"
+            android:text="20"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rad2"
+            android:layout_below="@id/rad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="74dp"
+            android:rotation="90"
+            android:text="20"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rad3"
+            android:layout_below="@id/rad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="77dp"
+            android:rotation="90"
+            android:text="20"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+
+
+
         <TextClock
             android:layout_width="60dp"
             android:layout_height="30dp"
             android:layout_marginLeft="264dp"
-            android:layout_marginTop="427sp"
+            android:layout_marginTop="429sp"
             android:rotation="90"
             android:textColor="@color/white"
             android:textSize="10.7sp"
